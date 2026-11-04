@@ -1017,12 +1017,28 @@ const BRAIN = [
     reply: `Two items need to be pre-ordered the <strong>night before</strong>:<ul><li>😴 Protein Soaked Oats ₹150</li><li>🍯 Dry Fruit Oats Bowl ₹160</li></ul>Message us on WhatsApp by 9 PM to place a pre-order. All other items are made fresh to order.`
   },
   {
+    keys: ['biryani','biriyani','rice','fried rice','pulao','veg rice'],
+    reply: `Ahh biryani 😄 — we wish! That's not us though.<br><br>Only Fresh is a chilla and protein bowl kitchen — think clean, high-protein vegetarian food rather than rice dishes.<br><br>If you want something filling and satisfying though, our <strong>Sattu Power Bowl</strong> (₹180) or <strong>Mixed Protein Chilla</strong> (₹190) hits that same "full meal" feeling — just much cleaner. 💪`
+  },
+  {
+    keys: ['paneer','cottage cheese'],
+    reply: `Yes! 🎉 We have <strong>Paneer Stuffed Chilla</strong> (₹180) — two crispy chillas stuffed with spiced paneer bhurji filling. 28g protein per serving.<br><br>It's one of our richest options. Great post-workout or as a proper meal. Want to know what else is in it?`
+  },
+  {
+    keys: ['egg','eggs','non veg','chicken','meat','fish','mutton'],
+    reply: `We're 100% pure vegetarian — no eggs, no meat, nothing. 🌿<br><br>Only Fresh was started specifically as a clean veg kitchen. Everything on our menu is plant-based whole food.<br><br>If you're looking for high protein without meat — our <strong>Mixed Protein Chilla</strong> (32g protein) and <strong>Full Protein Meal</strong> (60g+ protein) are genuinely impressive numbers for veg food!`
+  },
+  {
+    keys: ['sweet','mithai','ladoo','dessert','kheer','halwa','ice cream'],
+    reply: `No sweets on the menu right now 😊 — we're focused on protein and clean food.<br><br>Closest thing to a treat: <strong>Dry Fruit Oats Bowl</strong> (₹160) — loaded with dates, cashews, almonds and raisins. Feels indulgent, actually nutritious! 🌰`
+  },
+  {
     keys: ['channa','chana','chickpea','chick pea','chole','kala chana'],
     reply: `Yes! 🎉 We have <strong>Channa Masala Bowl</strong> (₹150).<br><br>Kabuli chana curry in a rich tomato-onion masala, served with fresh coriander and lemon.<br><br><strong>Nutrition:</strong> ~350 kcal · 18g protein · 52g carbs · 8g fibre<br><strong>Benefits:</strong> Chickpeas are one of the highest fibre legumes — great for gut health, blood sugar control, and satiety. High in folate and iron too.<br><br>Order on Zomato 🍽`
   },
   {
     keys: ['dosa','dose','idli','vada','tiffin','south indian'],
-    reply: `We don't serve traditional tiffin (dosa/idli) — Only Fresh is a <strong>chilla & protein bowl</strong> kitchen.<br><br>But our chillas are similar in feel to dosa — savoury, crisp crepes made from dal batter instead of rice. Higher protein, same comfort.<br><br>Try: <strong>Moong Dal Chilla</strong> (₹130) or <strong>Pesarattu</strong> (₹140) — Pesarattu is literally the Telugu green moong dosa. Very close! 🫓`
+    reply: `Haha not quite! 😄 We're not a tiffin place — Only Fresh is all about high-protein chillas and bowls.<br><br>But honestly? Our <strong>Pesarattu</strong> (₹140) is basically a green moong dosa — same crispy feel, way more protein. People who come for dosa usually love it.<br><br>Give it a shot! 🫓`
   },
   {
     keys: ['combo','meal combo','best value','full meal'],
@@ -1566,7 +1582,7 @@ async function findReply(text) {
     if (q.includes('price') || q.includes('cost') || q.includes('how much')) {
       return `Our prices range from <strong>₹50 – ₹180</strong>. Drinks & shots from ₹50, tiffin from ₹60, bowls ₹110–₹130, dal + rice meals ₹130–₹180. Check the <strong>Menu tab</strong> for full prices. Tap any item for nutrition details.`;
     }
-    return `Hmm, I'm not sure about that one! 🤔<br><br>Try asking about a specific item or your health goal:<ul><li>"Post-workout options?"</li><li>"Best for weight loss?"</li><li>"Feeling bloated — what to eat?"</li><li>"What's high in protein?"</li></ul>`;
+    return `Hmm, that one I'm not sure about! 😅<br><br>I know our menu really well though — ask me about a specific dish, your health goal, or how you're feeling right now and I'll point you to the right thing. 🌿`;
   }
 }
 
