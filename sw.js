@@ -1,7 +1,7 @@
 // Only Fresh — Service Worker
 // Enables PWA install prompt and offline support
 
-const CACHE = 'onlyfresh-v1';
+const CACHE = 'onlyfresh-v2';
 
 const ASSETS = [
   '/',
